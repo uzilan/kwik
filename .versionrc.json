@@ -8,6 +8,7 @@
         {"type": "feat", "section": "Features"},
         {"type": "stable", "section": "Stabilization"},
         {"type": "deprecate", "section": "Deprecations"},
+        {"type": "remove", "section": "Removed"},
         {"type": "fix", "section": "Bug fixes"},
         {"type": "perf", "section": "Performance improvements"},
         {"type": "docs", "section":  "Documentation"},

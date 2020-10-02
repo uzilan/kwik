@@ -89,34 +89,3 @@ fun Generator.Companion.nonBlankStrings(
     maxLength: Int = KWIK_DEFAULT_MAX_SIZE,
     charGenerator: Generator<Char> = Generator.characters(),
 ): Generator<String> = nonEmptyStrings(maxLength, charGenerator).filterNot { it.isBlank() }
-
-
-/**
- * Common set of character to be used with string generators
- */
-@Deprecated("Replaced by CharSets", replaceWith = ReplaceWith("CharSets"))
-object StringCharSets {
-
-    /** All printable characters */
-    @Suppress("MagicNumber")
-    val printable: Set<Char> = (32..127).mapTo(HashSet()) { it.toChar() }
-
-    /** Numeric characters (0-9) */
-    val numeric: Set<Char> = ('0'..'9').toHashSet()
-
-    /** Lowercase alphabetic characters */
-    val alphaLowerCase: Set<Char> = ('a'..'z').toHashSet()
-
-    /** Uppercase alphabetic characters */
-    val alphaUpperCase: Set<Char> = ('A'..'Z').toHashSet()
-
-    /** Alphabetic characters (lower and upper cases)*/
-    val alpha: Set<Char> = alphaLowerCase + alphaUpperCase
-
-    /**
-     * Alphabetic and numeric characters
-     *
-     * Equivalent of [alpha] + [numeric]
-     */
-    val alphaNum: Set<Char> = alpha + numeric
-}

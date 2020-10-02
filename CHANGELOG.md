@@ -25,7 +25,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Documentation
 
-* Recomands to use fun interface capabilities to create a generator (instead of the deprecated `create` method) ([#197](https://github.com/jcornaz/kwik/issues/197)) ([8ab7b38](https://github.com/jcornaz/kwik/commit/8ab7b388722321d149dc6dd4e2240b8be69a3e01))
+* Recommends to use fun interface capabilities to create a generator (instead of the deprecated `create` method) ([#197](https://github.com/jcornaz/kwik/issues/197)) ([8ab7b38](https://github.com/jcornaz/kwik/commit/8ab7b388722321d149dc6dd4e2240b8be69a3e01))
 * Remove gitter badge ([da4d049](https://github.com/jcornaz/kwik/commit/da4d049e0a80db7322dcb08d34a334e5ed862843))
 
 
